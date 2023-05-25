@@ -19,4 +19,4 @@ To enhance the practical applicability of the analysis and simplify forecasting,
 Research showed all groups of weight throughout mothers, but there is no connection between BMI and birth
 weight. There were a few extremely preterm infants in data, but no VLBW and ELBW children throughout them.
 Also the correlation between gestation and birth weight was high (0.405), that might had influence on the
-results of classification. [1](Unknown-9.png)
+results of classification. ![Figure 1](Figure 1.png)
