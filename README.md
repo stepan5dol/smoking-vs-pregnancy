@@ -19,4 +19,8 @@ To enhance the practical applicability of the analysis and simplify forecasting,
 Research showed all groups of weight throughout mothers, but there is no connection between BMI and birth
 weight. There were a few extremely preterm infants in data, but no VLBW and ELBW children throughout them.
 Also the correlation between gestation and birth weight was high (0.405), that might had influence on the
-results of classification. ![Figure 1](Figure 1.png)
+results of classification.[(Fig. 1)]((https://github.com/stepan5dol/smoking-vs-pregnancy/blob/2af4324ea9b116f120f714b19cc7771349c143ff/Figures/Figure%201.png)) ![Figure 1](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/745e21926a13e33935f9dea4b6bd78b12f5923d9/Figure%201.png)
+
+According to the distribution of smoking mothers among the groups of gestation, there is no connection between those facts. [(Fig. 2,](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/a60376266affbea1f3af5843eb4df70049f30571/figure%202.png) [Fig. 3,](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/a60376266affbea1f3af5843eb4df70049f30571/figure%203.png) [Fig. 4)](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/a60376266affbea1f3af5843eb4df70049f30571/figure%204.png) 
+
+![Fig. 2](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/a60376266affbea1f3af5843eb4df70049f30571/figure%202.png) ![Fig. 3,](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/a60376266affbea1f3af5843eb4df70049f30571/figure%203.png) ![Fig. 4)](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/a60376266affbea1f3af5843eb4df70049f30571/figure%204.png) 
