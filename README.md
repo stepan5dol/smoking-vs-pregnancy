@@ -15,3 +15,8 @@ All numeric values have been converted to the metric system.
 ### Feature Engineering
 To enhance the practical applicability of the analysis and simplify forecasting, we decided to categorize the gestation age into groups: `born preterm (0)`, `normal gestation age (1)`, and `postterm babies (2)`. We also classified the body weight into standard groups, including Macrosomia, Normal weight, Low body weight, Very low body weight, and Extremely low body weight. However, the dataset only includes three groups: `Macrosomia`, `Normal weight`, and `Low body weight`. Additionally, we considered replacing the mother's height and weight with the body mass index (BMI), as it may provide useful insights.
 
+### Statistical analysis
+Research showed all groups of weight throughout mothers, but there is no connection between BMI and birth
+weight. There were a few extremely preterm infants in data, but no VLBW and ELBW children throughout them.
+Also the correlation between gestation and birth weight was high (0.405), that might had influence on the
+results of classification. [1]()
