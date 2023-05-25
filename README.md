@@ -1,2 +1,5 @@
-# smoking-vs-pregnancy
-Prediction of gestation age group using ML &amp; feature engineering
+# Prediction of birth weight class using Gradient Boosting &amp; Feature Engineering
+## Abstract
+In this study, we explored a Kaggle [dataset](https://www.kaggle.com/datasets/debjeetdas/babies-birth-weight) containing information about mothers and their newborn children. We addressed data gaps, categorized the samples into gestation age groups and body weight classes, and conducted a statistical analysis. Our findings revealed a higher prevalence of smoking among mothers in the low body weight group. To focus on predicting low body weight using early features, we defined two body weight classes: 'Normal weight' and 'Low body weight.' We selected five features that could be determined before and during early stages of pregnancy for training machine learning models.
+
+Among all the tested models, smoking emerged as the most significant feature. The best-performing model achieved an impressive ROC-AUC score of 94.8% on the test data, indicating its potential for accurately predicting low body weight in early stages. This outcome suggests that our model can be effectively utilized as a predictive tool for identifying cases of low birth weight.
