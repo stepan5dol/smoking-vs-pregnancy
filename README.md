@@ -27,6 +27,6 @@ Based on the observed distribution of smoking mothers across gestational groups,
 Considering all the aforementioned information, we propose addressing `the classification problem by grouping the children into two categories: Low body weight children and Normal weight children.` In this classification, we have included the macrosomal group within the Normal weight group due to the similar distribution patterns observed among smoking mothers across these groups.
 
 ## Machine learning
-AUC-ROC metric was chosen for the binary classification task. Training, parameters selection and validation were provided using cross-validation tecnic by RamdomizedSearchSV. Due to the significant prevalence of one class over another (18.5 to 1) bootstrapping tecnic was used to make classes amount equal. 
+The AUC-ROC metric was selected for the binary classification task. Training, parameter selection, and validation were performed using cross-validation technique with RandomizedSearchCV. Due to the significant class imbalance (18.5 to 1), the bootstrapping technique was employed to equalize the class sizes.
 
-Three models were trained to 
+Three models were trained to determine the most suitable model in this scenario: LightGBM, CatBoost, and XGBoost. Only XGBoost achieved metrics exceeding 95% on both the train and test samples.
