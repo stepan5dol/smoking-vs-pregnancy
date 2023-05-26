@@ -29,4 +29,30 @@ Considering all the aforementioned information, we propose addressing `the class
 ## Machine learning
 The AUC-ROC metric was selected for the binary classification task. Training, parameter selection, and validation were performed using cross-validation technique with RandomizedSearchCV. Due to the significant class imbalance (18.5 to 1), the bootstrapping technique was employed to equalize the class sizes.
 
-Three models were trained to determine the most suitable model in this scenario: LightGBM, CatBoost, and XGBoost. Only XGBoost achieved metrics exceeding 95% on both the train and test samples.
+Three models were trained to determine the most suitable model in this scenario: LightGBM, CatBoost, and XGBoost. Only XGBoost achieved ROC-AUC scores exceeding 95% on both the train and test samples, with LGBM and CatBoost achieving scores of 86.8% and 88.4% respectively. [(Fig. 8)](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/fd680a5cea3bed6f39a8c29df5d4579f19177f49/Figures/figure%208.png)
+
+![Fig. 8](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/fd680a5cea3bed6f39a8c29df5d4579f19177f49/Figures/figure%208.png)
+
+To assess the importance of features for prediction, feature importances were obtained using the built-in functionality of gradient boosting models. Additionally, the Permutation Importance technique from Scikit-learn was employed to validate the output quality. The significance of the `smoke` feature was given more weight in the evaluation, as reflected by the ROC-AUC score. [(Fig. 9](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/fd680a5cea3bed6f39a8c29df5d4579f19177f49/Figures/figure%209.png)
+[10,](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/fd680a5cea3bed6f39a8c29df5d4579f19177f49/Figures/figure%2010.png)
+[11)](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/fd680a5cea3bed6f39a8c29df5d4579f19177f49/Figures/figure%2011.png)
+
+![Fig. 9](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/fd680a5cea3bed6f39a8c29df5d4579f19177f49/Figures/figure%209.png)
+![Fig. 10](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/fd680a5cea3bed6f39a8c29df5d4579f19177f49/Figures/figure%2010.png)
+![Fig. 11](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/fd680a5cea3bed6f39a8c29df5d4579f19177f49/Figures/figure%2011.png)
+
+However, the Permutation Importance analysis yielded slightly divergent results [(Fig. 12)](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/1c450e5a8d0ef2083467d6939afac52e52eef455/Figures/figure%2012.png). Among the three models (LGBM, CatBoost, and XGBoost), smoking among mothers emerged as the second most important feature for LGBM and CatBoost, and the third most important for XGBoost predictions. Nevertheless, it is evident that the `smoke` feature retains considerable importance. Notably, it should be acknowledged that this feature is the only modifiable one within the given dataset.
+
+![(Fig. 12)](https://github.com/stepan5dol/smoking-vs-pregnancy/blob/1c450e5a8d0ef2083467d6939afac52e52eef455/Figures/figure%2012.png)
+
+## Conclusions
+In conclusion, our analysis of the dataset on birth weight prediction using gradient boosting models and feature engineering techniques yielded several key findings:
+
+1. The prevalence of smoking among mothers was significantly higher in the low body weight group compared to the normal body weight group.
+2. We observed a strong correlation between gestation age and birth weight, indicating the importance of gestation age in predicting birth weight.
+3. A chi-square test revealed a significant association between smoking and the likelihood of having a baby with low body weight.
+4. Machine learning models, including LightGBM, CatBoost, and XGBoost, were trained to predict low body weight. XGBoost outperformed the other models, achieving ROC-AUC scores exceeding 95% on both the training and test datasets.
+5. Feature importances were analyzed using the built-in functionality of gradient boosting models, and the Permutation Importance technique was employed to validate the results. The analysis consistently identified smoking as one of the most important features in predicting low body weight, although the exact ranking differed slightly between models.
+6. The findings suggest that smoking is a significant factor contributing to the likelihood of having a baby with low body weight, emphasizing the importance of smoking cessation programs for expectant mothers.
+
+Overall, our study highlights the value of machine learning models and feature engineering techniques in understanding the factors influencing birth weight and provides insights into the impact of smoking on infant health. Further research and interventions can be conducted based on these findings to improve birth outcomes and promote maternal and child well-being.
